@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+    height: 700px;
+    width: 100%;
+    background-image: url(./car.png),url(./spanner.png),url(./car\ garage.jpg);
+    background-size:180px,20%, 100%;
+    background-position: -10px 610px,top right,0px -120px;
+    background-repeat: no-repeat;
+    transition: background-size 3s,background-position 1s;
+}
+#gear{
+    width: 320px;
+    transition: rotate 10s,width 2s;
+    float: left;
+    margin-top: -350px;
+}
+#header:hover #gear{
+    rotate: 360deg;
+    width: 260px;
+}
+#header:hover {
+    background-size: 180px,10%,120%;
+    background-position: 1600px 610px,top right,-80px -180px;
+}
+#heading{
+    color:white;
+    font-size: 80px;
+    padding-top: 300px;
+    text-shadow: 5px 5px 5px blue;
+    transition: all 2s;
+}
+#header:hover #heading{
+    font-size: 100px;
+    color: black;
+    text-shadow: 5px 5px 5px white;
+}
